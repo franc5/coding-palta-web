@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import Helmet from "react-helmet";
 
 import "../assets/materialize/styles/materialize.min.css";
 import "../assets/materialize/styles/styles.css";
@@ -38,6 +39,12 @@ export default function Layout({ children }: Props): JSX.Element {
 
   return (
     <>
+      {/* Import icons */}
+      <Helmet>
+        {/* TODO: Save the fonts in the project */}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      </Helmet>
+
       <nav className="white" role="navigation">
         <div className="nav-wrapper container">
           <Link id="logo-container" to="/" className="brand-logo">CodingPalta</Link>
