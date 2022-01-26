@@ -7,6 +7,7 @@ declare global {
       Parallax: {
         init(elements: NodeList, options?: any): any;
       },
+      toast({ html: string }): void,
     },
   }
 }

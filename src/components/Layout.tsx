@@ -15,13 +15,17 @@ if (typeof window !== "undefined") {
 
 interface NavbarLinksProps {
   color?: "white-text";
+  excludeFutureSections?: boolean
 }
 
-function NavbarLinks({ color }: NavbarLinksProps): JSX.Element {
+function NavbarLinks({ color, excludeFutureSections = false }: NavbarLinksProps): JSX.Element {
+  const showToastMessage = () => window.M.toast({ html: "We are working hard on our blog, it will be available pretty soon!" });
+
   return (
     <>
       <li><Link className={color} to="/services">Services</Link></li>
       <li><Link className={color} to="/about">About Us</Link></li>
+      {!excludeFutureSections && <li onClick={showToastMessage}><Link className={color} to="#">Blog <sup>(soon)</sup></Link></li>}
       <li><Link className={color} to="/contact">Contact</Link></li>
     </>
   );
@@ -76,7 +80,7 @@ export default function Layout({ children }: Props): JSX.Element {
             <div className="col l3 s12">
               <h5 className="white-text">Sections</h5>
               <ul>
-                <NavbarLinks color="white-text" />
+                <NavbarLinks color="white-text" excludeFutureSections />
               </ul>
             </div>
           </div>
