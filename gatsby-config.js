@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-      title: `Coding Palta`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Coding Palta`,
+    siteUrl: `https://codingpalta.com`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
@@ -12,3 +12,4 @@ module.exports = {
     __key: "images"
   }]
 };
+
