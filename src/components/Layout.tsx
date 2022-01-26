@@ -4,6 +4,14 @@ import { Link } from "gatsby";
 import "../assets/materialize/styles/materialize.min.css";
 import "../assets/materialize/styles/styles.css";
 
+import "../global";
+
+// As materialize JS file uses the window global object, we need to import it only if it is defined.
+// See: https://www.gatsbyjs.com/docs/debugging-html-builds/#how-to-check-if-window-is-defined
+if (typeof window !== "undefined") {
+  window.M = require("../assets/materialize/js/materialize.min.js");
+}
+
 interface NavbarLinksProps {
   color?: "white-text";
 }
