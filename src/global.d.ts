@@ -1,6 +1,10 @@
 declare global {
   interface Window {
-    M: any;
+    M: {
+      Sidenav: {
+        init(elements: NodeList, options?: any): any;
+      },
+    },
   }
 }
 
