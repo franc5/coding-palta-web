@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 
+import OneTopicSection from "../components/OneTopicSection";
+
 // TODO: Load images using Gatsby images plugin
 // @ts-ignore
 import Contact_0 from "../images/Contact_0.jpg";
@@ -41,15 +43,11 @@ export default function ContactPage() {
     <div className="container">
       <div className="section">
 
-        <div className="row">
-          <div className="col s12 center">
-            <h4>Contact Us</h4>
-            <p className="left-align light">
-              {/* TODO: Add a valid message */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
-            </p>
-          </div>
-        </div>
+        {/* TODO: Add a valid message */}
+        <OneTopicSection
+          title="Contact Us"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros."
+        />
 
         <div className="row">
           <form className="col l6 s12" onSubmit={handleOnSubmit}>
