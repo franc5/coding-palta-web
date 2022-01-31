@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   title: string;
-  description: string;
+  description: string | JSX.Element;
 }
 
 export default function OneTopicSection({ title, description }: Props) {
