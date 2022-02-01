@@ -10,6 +10,13 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
+  }, {
+    resolve: 'gatsby-plugin-i18n',
+    options: {
+      langKeyDefault: 'en',
+      useLangKeyLayout: false,
+      prefixDefault: false,
+    },
   }]
 };
 
