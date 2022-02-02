@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import Helmet from "react-helmet";
 
+import { getLangFromPathname, LANGS } from "../utils/lang";
+
 import "../assets/materialize/styles/materialize.min.css";
 import "../assets/materialize/styles/styles.css";
 
@@ -15,10 +17,11 @@ if (typeof window !== "undefined") {
 
 interface NavbarLinksProps {
   color?: "white-text";
-  excludeFutureSections?: boolean
+  excludeFutureSections?: boolean;
+  lang: LANGS;
 }
 
-function NavbarLinks({ color, excludeFutureSections = false }: NavbarLinksProps): JSX.Element {
+function NavbarLinks({ color, excludeFutureSections = false, lang }: NavbarLinksProps): JSX.Element {
   const showToastMessage = () => window.M.toast({ html: "We are working hard on our blog, it will be available pretty soon!" });
 
   return (
@@ -27,19 +30,29 @@ function NavbarLinks({ color, excludeFutureSections = false }: NavbarLinksProps)
       <li><Link className={color} to="/about">About Us</Link></li>
       {!excludeFutureSections && <li onClick={showToastMessage}><Link className={color} to="#">Blog <sup>(soon)</sup></Link></li>}
       <li><Link className={color} to="/contact">Contact</Link></li>
+
+      {(lang === LANGS.EN)
+        ? <li><Link className={color} to="/es">Versión en Español</Link></li>
+        : <li><Link className={color} to="/">English version</Link></li>
+      }
     </>
   );
 }
 
 interface Props {
   children: JSX.Element;
+  location: {
+    pathname: string;
+  }
 }
 
-export default function Layout({ children }: Props): JSX.Element {
+export default function Layout({ children, location }: Props): JSX.Element {
   React.useEffect(function initSideNavs() {
     const sideNavs = document.querySelectorAll('.sidenav');
     window.M.Sidenav.init(sideNavs);
   }, []);
+
+  const lang = getLangFromPathname(location.pathname);
 
   return (
     <>
@@ -54,11 +67,11 @@ export default function Layout({ children }: Props): JSX.Element {
           <Link id="logo-container" to="/" className="brand-logo">CodingPalta</Link>
 
           <ul className="right hide-on-med-and-down">
-            <NavbarLinks />
+            <NavbarLinks lang={lang} />
           </ul>
 
           <ul id="nav-mobile" className="sidenav">
-            <NavbarLinks />
+            <NavbarLinks lang={lang} />
           </ul>
           <a href="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 
@@ -80,7 +93,7 @@ export default function Layout({ children }: Props): JSX.Element {
             <div className="col l3 s12">
               <h5 className="white-text">Sections</h5>
               <ul>
-                <NavbarLinks color="white-text" excludeFutureSections />
+                <NavbarLinks color="white-text" lang={lang} excludeFutureSections />
               </ul>
             </div>
           </div>
