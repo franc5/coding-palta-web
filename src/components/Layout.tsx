@@ -16,24 +16,22 @@ if (typeof window !== "undefined") {
 }
 
 interface NavbarLinksProps {
-  color?: "white-text";
-  excludeFutureSections?: boolean;
   lang: LANGS;
 }
 
-function NavbarLinks({ color, excludeFutureSections = false, lang }: NavbarLinksProps): JSX.Element {
+function NavbarLinks({ lang }: NavbarLinksProps): JSX.Element {
   const showToastMessage = () => window.M.toast({ html: "We are working hard on our blog, it will be available pretty soon!" });
 
   return (
     <>
-      <li><Link className={color} to="/services">Services</Link></li>
-      <li><Link className={color} to="/about">About Us</Link></li>
-      {!excludeFutureSections && <li onClick={showToastMessage}><Link className={color} to="#">Blog <sup>(soon)</sup></Link></li>}
-      <li><Link className={color} to="/contact">Contact</Link></li>
+      <li><Link to="/services">Services</Link></li>
+      <li><Link to="/about">About Us</Link></li>
+      <li onClick={showToastMessage}><Link to="#">Blog <sup>(soon)</sup></Link></li>
+      <li><Link to="/contact">Contact</Link></li>
 
       {(lang === LANGS.EN)
-        ? <li><Link className={color} to="/es">Versión en Español</Link></li>
-        : <li><Link className={color} to="/">English version</Link></li>
+        ? <li><Link to="/es">Versión en Español</Link></li>
+        : <li><Link to="/">English version</Link></li>
       }
     </>
   );
@@ -84,24 +82,18 @@ export default function Layout({ children, location }: Props): JSX.Element {
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h5 className="white-text">Coding Palta LLC</h5>
+              <h5 className="white-text">CodingPalta LLC</h5>
               <p className="grey-text text-lighten-4">
                 {/* TODO: Short description about the LLC -> We provide professional software development services for startups */}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel accumsan nulla. Maecenas eget purus est. Donec nisi ipsum, bibendum et rutrum at, iaculis in orci. Praesent facilisis mattis ligula, et consequat neque mollis eu. Donec ut luctus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-            </div>
-            <div className="col l3 s12">
-              <h5 className="white-text">Sections</h5>
-              <ul>
-                <NavbarLinks color="white-text" lang={lang} excludeFutureSections />
-              </ul>
             </div>
           </div>
           {/* TODO: Add additional section here */}
         </div>
         <div className="footer-copyright">
           <div className="container">
-            &nbsp;&nbsp;© Copyright 2022 - Coding Palta LLC - All rights reserved
+            &nbsp;&nbsp;© Copyright 2022 - CodingPalta LLC - All rights reserved
           </div>
         </div>
       </footer>
