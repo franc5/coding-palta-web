@@ -59,15 +59,23 @@ interface NavbarLinksProps {
 }
 
 export default function NavbarLinks({ lang }: NavbarLinksProps): JSX.Element {
-  const showToastMessage = () => window.M.toast({ html: LOCALE[lang].blog.alert });
+  const closeSideNav = () => {
+    const sideNav = document.querySelector('.sidenav');
+    window.M.Sidenav.getInstance(sideNav)?.close();
+  }
+
+  const showToastMessage = () => {
+    window.M.toast({ html: LOCALE[lang].blog.alert });
+    closeSideNav();
+  }
 
   return (
     <>
-      <li><Link to={LOCALE[lang].services.url}>{LOCALE[lang].services.text}</Link></li>
-      <li><Link to={LOCALE[lang].about.url}>{LOCALE[lang].about.text}</Link></li>
+      <li onClick={closeSideNav}><Link to={LOCALE[lang].services.url}>{LOCALE[lang].services.text}</Link></li>
+      <li onClick={closeSideNav}><Link to={LOCALE[lang].about.url}>{LOCALE[lang].about.text}</Link></li>
       <li onClick={showToastMessage}><Link to="#">{LOCALE[lang].blog.text}<sup>({LOCALE[lang].blog.text_2})</sup></Link></li>
-      <li><Link to={LOCALE[lang].contact.url}>{LOCALE[lang].contact.text}</Link></li>
-      <li><Link to={LOCALE[lang].lang.url}>{LOCALE[lang].lang.text}</Link></li>
+      <li onClick={closeSideNav}><Link to={LOCALE[lang].contact.url}>{LOCALE[lang].contact.text}</Link></li>
+      <li onClick={closeSideNav}><Link to={LOCALE[lang].lang.url}>{LOCALE[lang].lang.text}</Link></li>
     </>
   );
 }

@@ -3,6 +3,7 @@ declare global {
     M: {
       Sidenav: {
         init(elements: NodeList, options?: any): any;
+        getInstance(elements: Node): any;
       },
       Parallax: {
         init(elements: NodeList, options?: any): any;
