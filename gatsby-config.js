@@ -17,6 +17,7 @@ module.exports = {
       useLangKeyLayout: false,
       prefixDefault: false,
     },
-  }]
+  }],
+  pathPrefix: "/coding-palta-web",
 };
 
