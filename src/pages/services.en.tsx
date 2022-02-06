@@ -30,7 +30,7 @@ export default function ServicesPage() {
         />
 
         <div className="row">
-          {SERVICES.map(service => <Item {...service} />)}
+          {SERVICES.map(service => <Item key={service.icon} {...service} />)}
         </div>
 
         <div className="row">

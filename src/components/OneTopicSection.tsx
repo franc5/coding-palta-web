@@ -10,7 +10,7 @@ export default function OneTopicSection({ title, description }: Props) {
     <div className="row">
       <div className="col s12 center">
         <h4>{title}</h4>
-        <p className="center-align light">{description}</p>
+        <div className="center-align light">{description}</div>
       </div>
     </div>
   );

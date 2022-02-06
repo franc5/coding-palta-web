@@ -74,7 +74,7 @@ export default function Layout({ children, location }: Props): JSX.Element {
         </div>
         <div className="footer-copyright">
           <div className="container">
-            &nbsp;&nbsp;© Copyright 2022 - CodingPalta LLC - {(lang == LANGS.EN) ? "All rights reserved" : "Todos los derechos reservados"}
+            &nbsp;&nbsp;&copy; Copyright 2022 - CodingPalta LLC - {(lang == LANGS.EN) ? "All rights reserved" : "Todos los derechos reservados"}
           </div>
         </div>
       </footer>
