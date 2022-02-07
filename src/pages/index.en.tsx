@@ -45,7 +45,7 @@ export default function IndexPage() {
                   We provide software development solutions for startups seeking to improve their products using the newest technologies and the best practices of the industry.
                 </p>
                 <p>
-                  Our work is supported by agile methodologies such as Scrum, always tailored to each different client and project.
+                  Our work is supported by agile methodologies such as Scrum, always tailored to each client and project.
                 </p>
               </>
             }
