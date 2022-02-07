@@ -4,6 +4,7 @@ import * as _global from "../global";
 
 import Divider from "../components/Divider";
 import OneTopicSection from "../components/OneTopicSection";
+import TechCarousel from "../components/TechCarousel";
 
 // TODO: Load images using Gatsby images plugin
 // @ts-ignore
@@ -45,6 +46,26 @@ export default function IndexPage() {
                 </p>
                 <p>
                   Our work is supported by agile methodologies such as Scrum, always tailored to each different client and project.
+                </p>
+              </>
+            }
+          />
+        </div>
+      </div>
+
+      <Divider />
+
+      <div className="container">
+        <div className="section">
+          <OneTopicSection
+            title="Technologies"
+            description={
+              <>
+                <p>
+                  In CodingPalta we use the best technologies to provide high quality software development services.
+                </p>
+                <p>
+                  <TechCarousel />
                 </p>
               </>
             }
