@@ -3,7 +3,7 @@ module.exports = {
     title: `Coding Palta`,
     siteUrl: `https://codingpalta.com`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-svgr", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
