@@ -3,22 +3,41 @@ import React from "react";
 import * as _global from "../../global";
 
 // Icons downloaded from https://vecta.io/symbols/25/web-technologies
-import Android_Logo from "./icons/android.svg";
-import Babel_Logo from "./icons/babel.svg";
-import Cordova_Logo from "./icons/apache-cordova.svg";
-import Electron_Logo from "./icons/electron.svg";
-import Firebase_Logo from "./icons/firebase.svg";
-import Github_Logo from "./icons/github.svg";
-import Graphql_Logo from "./icons/graphql.svg";
-import HTML5_Logo from "./icons/html5.svg";
-import JS_Logo from "./icons/javascript.svg";
-import MySQL_Logo from "./icons/mysql.svg";
-import NodeJS_Logo from "./icons/nodejs.svg";
-import PHP_Logo from "./icons/php.svg";
-import Python_Logo from "./icons/python.svg";
-import React_Logo from "./icons/react.svg";
-import Sass_Logo from "./icons/sass.svg";
-import TypeScript_Logo from "./icons/typescript.svg";
+import { ReactComponent as Android_Logo } from "./icons/android.svg";
+import { ReactComponent as Babel_Logo } from "./icons/babel.svg";
+import { ReactComponent as Cordova_Logo } from "./icons/apache-cordova.svg";
+import { ReactComponent as Electron_Logo } from "./icons/electron.svg";
+import { ReactComponent as Firebase_Logo } from "./icons/firebase.svg";
+import { ReactComponent as Github_Logo } from "./icons/github.svg";
+import { ReactComponent as Graphql_Logo } from "./icons/graphql.svg";
+import { ReactComponent as HTML5_Logo } from "./icons/html5.svg";
+import { ReactComponent as JS_Logo } from "./icons/javascript.svg";
+import { ReactComponent as MySQL_Logo } from "./icons/mysql.svg";
+import { ReactComponent as NodeJS_Logo } from "./icons/nodejs.svg";
+import { ReactComponent as PHP_Logo } from "./icons/php.svg";
+import { ReactComponent as Python_Logo } from "./icons/python.svg";
+import { ReactComponent as React_Logo } from "./icons/react.svg";
+import { ReactComponent as Sass_Logo } from "./icons/sass.svg";
+import { ReactComponent as TypeScript_Logo } from "./icons/typescript.svg";
+
+const LOGOS: Array<JSX.Element> = [
+  Android_Logo,
+  Babel_Logo,
+  Cordova_Logo,
+  Electron_Logo,
+  Firebase_Logo,
+  Github_Logo,
+  Graphql_Logo,
+  HTML5_Logo,
+  JS_Logo,
+  MySQL_Logo,
+  NodeJS_Logo,
+  PHP_Logo,
+  Python_Logo,
+  React_Logo,
+  Sass_Logo,
+  TypeScript_Logo,
+];
 
 export default function TechCarousel() {
   React.useEffect(function initCarousel() {
@@ -35,22 +54,11 @@ export default function TechCarousel() {
 
   return (
     <div className="carousel">
-      <a className="carousel-item"><img src={Android_Logo} /></a>
-      <a className="carousel-item"><img src={Babel_Logo} /></a>
-      <a className="carousel-item"><img src={Cordova_Logo} /></a>
-      <a className="carousel-item"><img src={Electron_Logo} /></a>
-      <a className="carousel-item"><img src={Firebase_Logo} /></a>
-      <a className="carousel-item"><img src={Github_Logo} /></a>
-      <a className="carousel-item"><img src={Graphql_Logo} /></a>
-      <a className="carousel-item"><img src={HTML5_Logo} /></a>
-      <a className="carousel-item"><img src={JS_Logo} /></a>
-      <a className="carousel-item"><img src={MySQL_Logo} /></a>
-      <a className="carousel-item"><img src={NodeJS_Logo} /></a>
-      <a className="carousel-item"><img src={PHP_Logo} /></a>
-      <a className="carousel-item"><img src={Python_Logo} /></a>
-      <a className="carousel-item"><img src={React_Logo} /></a>
-      <a className="carousel-item"><img src={Sass_Logo} /></a>
-      <a className="carousel-item"><img src={TypeScript_Logo} /></a>
+      {LOGOS.map(LogoImageComponent => (
+        <a className="carousel-item valign-wrapper">
+          <LogoImageComponent />
+        </a>
+      ))}
     </div>
   );
 }

@@ -59,17 +59,9 @@ export default function IndexPage() {
         <div className="section">
           <OneTopicSection
             title="Technologies"
-            description={
-              <>
-                <p>
-                  In CodingPalta we use the best technologies to provide high quality software development services.
-                </p>
-                <p>
-                  <TechCarousel />
-                </p>
-              </>
-            }
+            description="In CodingPalta we use the best technologies to provide high quality software development services."
           />
+          <TechCarousel />
         </div>
       </div>
 
