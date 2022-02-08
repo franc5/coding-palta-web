@@ -11,6 +11,9 @@ import "../assets/materialize/styles/styles.css";
 
 import * as _global from "../global";
 
+// @ts-ignore
+import Payment_Methods from "./img/Payment_Methods.png";
+
 // As materialize JS file uses the window global object, we need to import it only if it is defined.
 // See: https://www.gatsbyjs.com/docs/debugging-html-builds/#how-to-check-if-window-is-defined
 if (typeof window !== "undefined") {
@@ -67,6 +70,12 @@ export default function Layout({ children, location }: Props): JSX.Element {
               <p className="grey-text text-lighten-4">
                 {/* TODO: Short description about the LLC -> We provide professional software development services for startups */}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel accumsan nulla. Maecenas eget purus est. Donec nisi ipsum, bibendum et rutrum at, iaculis in orci. Praesent facilisis mattis ligula, et consequat neque mollis eu. Donec ut luctus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div className="col l3 offset-l3 s12">
+              <p>
+                We work with secure payment methods and SSL encryption
+                <img src={Payment_Methods} className="responsive-img" />
               </p>
             </div>
           </div>
