@@ -5,6 +5,9 @@ import { LANGS } from "../utils/lang";
 
 import * as _global from "../global";
 
+import EN_FLAG from "./img/en.png";
+import ES_FLAG from "./img/es.png";
+
 const LOCALE = {
   [LANGS.EN]: {
     "services": {
@@ -75,7 +78,11 @@ export default function NavbarLinks({ lang }: NavbarLinksProps): JSX.Element {
       <li onClick={closeSideNav}><Link to={LOCALE[lang].about.url}>{LOCALE[lang].about.text}</Link></li>
       <li onClick={showToastMessage}><Link to="#">{LOCALE[lang].blog.text}<sup>({LOCALE[lang].blog.text_2})</sup></Link></li>
       <li onClick={closeSideNav}><Link to={LOCALE[lang].contact.url}>{LOCALE[lang].contact.text}</Link></li>
-      <li onClick={closeSideNav}><Link to={LOCALE[lang].lang.url}>{LOCALE[lang].lang.text}</Link></li>
+      <li onClick={closeSideNav}>
+        <Link to={LOCALE[lang].lang.url}>
+          <img src={(lang == LANGS.EN) ? ES_FLAG : EN_FLAG} /> {LOCALE[lang].lang.text}
+        </Link>
+      </li>
     </>
   );
 }
