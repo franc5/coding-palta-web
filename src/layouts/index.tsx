@@ -20,6 +20,41 @@ if (typeof window !== "undefined") {
   window.M = require("../assets/materialize/js/materialize.min.js");
 }
 
+const LOCALE = {
+  [LANGS.EN]: {
+    payment: {
+      text: "We work with secure payment methods and SSL encryption",
+    },
+    terms: {
+      text: "Terms and conditions",
+      url: "/terms",
+    },
+    privacy: {
+      text: "Privacy",
+      url: "/privacy",
+    },
+    rights: {
+      text: "All rights reserved",
+    },
+  },
+  [LANGS.ES]: {
+    payment: {
+      text: "Trabajamos con sistemas de pago seguros y encriptación SSL",
+    },
+    terms: {
+      text: "Términos y condiciones",
+      url: "/es/terminos",
+    },
+    privacy: {
+      text: "Privacidad",
+      url: "/es/privacidad",
+    },
+    rights: {
+      text: "Todos los derechos reservados",
+    },
+  },
+}
+
 interface Props {
   children: JSX.Element;
   location: {
@@ -74,16 +109,16 @@ export default function Layout({ children, location }: Props): JSX.Element {
             </div>
             <div className="col l3 offset-l3 s12">
               <p>
-                We work with secure payment methods and SSL encryption
+                {LOCALE[lang].payment.text}
                 <img src={Payment_Methods} className="responsive-img" />
+                <Link to={LOCALE[lang].terms.url} className="white-text">{LOCALE[lang].terms.text}</Link> | <Link to={LOCALE[lang].privacy.url} className="white-text">{LOCALE[lang].privacy.text}</Link>
               </p>
             </div>
           </div>
-          {/* TODO: Add additional section here */}
         </div>
         <div className="footer-copyright">
           <div className="container">
-            &nbsp;&nbsp;&copy; Copyright 2022 - CodingPalta LLC - {(lang == LANGS.EN) ? "All rights reserved" : "Todos los derechos reservados"}
+            &nbsp;&nbsp;&copy; Copyright 2022 - CodingPalta LLC - {LOCALE[lang].rights.text}
           </div>
         </div>
       </footer>
