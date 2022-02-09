@@ -32,58 +32,43 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <div className="container">
-        <div className="section">
-          <OneTopicSection
-            title="Who we are?"
-            description={
-              <>
-                <p>
-                  We are a team of professional software developers with more than six years of experience in web and mobile development.
-                </p>
-                <p>
-                  We provide software development solutions for startups seeking to improve their products using the newest technologies and the best practices of the industry.
-                </p>
-                <p>
-                  Our work is supported by agile methodologies such as Scrum, always tailored to each client and project.
-                </p>
-              </>
-            }
-          />
-        </div>
-      </div>
+      <OneTopicSection title="Who we are?">
+        <>
+          <p>
+            We are a team of professional software developers with more than six years of experience in web and mobile development.
+          </p>
+          <p>
+            We provide software development solutions for startups seeking to improve their products using the newest technologies and the best practices of the industry.
+          </p>
+          <p>
+            Our work is supported by agile methodologies such as Scrum, always tailored to each client and project.
+          </p>
+        </>
+      </OneTopicSection>
 
       <Divider />
 
-      <div className="container">
-        <div className="section">
-          <OneTopicSection
-            title="Technologies"
-            description="In CodingPalta we use the best technologies to provide high quality software development services."
-          />
+      <OneTopicSection title="Technologies">
+        <>
+          <p>
+            In CodingPalta we use the best technologies to provide high quality software development services.
+          </p>
           <TechCarousel />
-        </div>
-      </div>
+        </>
+      </OneTopicSection>
 
       <Divider />
 
-      <div className="container">
-        <div className="section">
-          <OneTopicSection
-            title="Partners and customers"
-            description={
-              <>
-                <p>
-                  We work with <a href="https://woxlab.com" target="_blank">WoxLab LLC</a> with which we share some common clients. And we are constantly seeking for new startups to work with.
-                </p>
-                <a href="https://woxlab.com" target="_blank">
-                  <img src="https://woxlab.com/wp-content/uploads/2021/01/Woxlab.Logo-02.png" alt="WoxLab" width="252px" height="72px" />
-                </a>
-              </>
-            }
-          />
-        </div>
-      </div>
+      <OneTopicSection title="Partners and customers">
+        <>
+          <p>
+            We work with <a href="https://woxlab.com" target="_blank">WoxLab LLC</a> with which we share some common clients. And we are constantly seeking for new startups to work with.
+          </p>
+          <a href="https://woxlab.com" target="_blank">
+            <img src="https://woxlab.com/wp-content/uploads/2021/01/Woxlab.Logo-02.png" alt="WoxLab" width="252px" height="72px" />
+          </a>
+        </>
+      </OneTopicSection>
 
     </>
   );

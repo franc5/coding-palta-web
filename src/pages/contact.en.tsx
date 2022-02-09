@@ -41,14 +41,12 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="container">
-      <div className="section">
-
-        {/* TODO: Add a valid message */}
-        <OneTopicSection
-          title="Contact Us"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros."
-        />
+    <OneTopicSection title="Contact Us">
+      <>
+        <p>
+          {/* TODO: Add a valid message */}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
+        </p>
 
         <SectionWithImage image={Contact_0}>
           <form onSubmit={handleOnSubmit}>
@@ -79,9 +77,8 @@ export default function ContactPage() {
             </div>
           </form>
         </SectionWithImage>
-
-      </div>
-    </div>
+      </>
+    </OneTopicSection>
   );
 }
 

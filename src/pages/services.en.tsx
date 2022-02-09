@@ -20,14 +20,12 @@ const SERVICES: Array<Service> = [{
 
 export default function ServicesPage() {
   return (
-    <div className="container">
-      <div className="section">
-
+    <OneTopicSection title="Our Services">
+      <>
         {/* TODO: Add a paragraph explaining that we are a young company aiming to provide professional services to help startups grow faster */}
-        <OneTopicSection
-          title="Our Services"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus."
-        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus.
+        </p>
 
         <div className="row">
           {SERVICES.map(service => <Item key={service.icon} {...service} />)}
@@ -40,9 +38,8 @@ export default function ServicesPage() {
             </p>
           </div>
         </div>
-
-      </div>
-    </div>
+      </>
+    </OneTopicSection>
   );
 }
 

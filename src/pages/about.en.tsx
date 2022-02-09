@@ -16,25 +16,16 @@ const LinkedInLink = () => (
 
 export default function AboutPage() {
   return (
-    <div className="container">
-      <div className="section">
-
-        <OneTopicSection
-          title="About CodingPalta"
-          description={
-            <SectionWithImage image={About_0}>
-              <p className="left-align">
-                CodingPalta is a is a technology company specialized in software development.
-                It was founded in 2022 by Eng. Luis Francisco Costa ( <LinkedInLink /> ) aiming to be a company which provides software development solutions for startups.
-                <br />
-                To reach these goals, we use the newest technologies and follow the best practice in order to develop high quality software.
-              </p>
-            </SectionWithImage>
-          }
-        />
-
-      </div>
-    </div>
+    <OneTopicSection title="About CodingPalta">
+      <SectionWithImage image={About_0}>
+        <p className="left-align">
+          CodingPalta is a is a technology company specialized in software development.
+          It was founded in 2022 by Eng. Luis Francisco Costa ( <LinkedInLink /> ) aiming to be a company which provides software development solutions for startups.
+          <br />
+          To reach these goals, we use the newest technologies and follow the best practice in order to develop high quality software.
+        </p>
+      </SectionWithImage>
+    </OneTopicSection>
   );
 }
 
