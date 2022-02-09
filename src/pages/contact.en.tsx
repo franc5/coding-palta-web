@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import OneTopicSection from "../components/OneTopicSection";
+import SectionWithImage from "../components/SectionWithImage";
 
 // TODO: Load images using Gatsby images plugin
 // @ts-ignore
@@ -49,8 +50,8 @@ export default function ContactPage() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros."
         />
 
-        <div className="row">
-          <form className="col l6 s12" onSubmit={handleOnSubmit}>
+        <SectionWithImage image={Contact_0}>
+          <form onSubmit={handleOnSubmit}>
             <div className="row">
 
               <div className="input-field col s12">
@@ -77,12 +78,8 @@ export default function ContactPage() {
 
             </div>
           </form>
+        </SectionWithImage>
 
-          <div className="col l6 hide-on-med-and-down">
-            <img className="responsive-img" src={Contact_0} alt="Contact us" style={{ opacity: .75 }}/>
-          </div>
-
-        </div>
       </div>
     </div>
   );
