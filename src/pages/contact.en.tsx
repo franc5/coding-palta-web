@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "gatsby";
 
 import OneTopicSection from "../components/OneTopicSection";
 import SectionWithImage from "../components/SectionWithImage";
@@ -44,8 +45,7 @@ export default function ContactPage() {
     <OneTopicSection title="Contact Us">
       <>
         <p>
-          {/* TODO: Add a valid message */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
+          If you want to get a quote or simply get in touch with our team to meet us and know how we work and how we can help your startup grow, please fill the form below and we will reply to your message within 48 working hours.
         </p>
 
         <SectionWithImage image={Contact_0}>
@@ -77,6 +77,11 @@ export default function ContactPage() {
             </div>
           </form>
         </SectionWithImage>
+
+        <p>
+          By sending a message to us, you accept our <Link to="/terms">Terms and conditions</Link> and <Link to="/privacy">Privacy policies</Link>.
+        </p>
+
       </>
     </OneTopicSection>
   );
