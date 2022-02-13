@@ -37,9 +37,17 @@ export default function AboutPage() {
 
       <OneTopicSection title="How we wok?">
         <SectionWithImage image={About_1} imageInTheLeft>
-          <p className="left-align">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+          <>
+            <p className="left-align">
+              <b>Teamwork:</b> In CodingPalta we believe that teamwork and synergy are the essential engines to drive any project forward and achieve the best results.
+            </p>
+            <p className="left-align">
+              <b>Commitment:</b> In CodingPalta we understand each job as a commitment to our clients and we greatly value the trust they place in us.
+            </p>
+            <p className="left-align">
+              <b>Professionalism:</b> In CodingPalta we work daily to become better professionals, that's why constant training is a must for us.
+            </p>
+          </>
         </SectionWithImage>
       </OneTopicSection>
 
