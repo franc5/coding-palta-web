@@ -22,9 +22,8 @@ export default function ServicesPage() {
   return (
     <OneTopicSection title="Our Services">
       <>
-        {/* TODO: Add a paragraph explaining that we are a young company aiming to provide professional services to help startups grow faster */}
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus.
+          In CodingPalta we provide professional software development services for startups. In order to meet the needs of our customers and to adapt to each of them, we offer a wide variety of services and contracting methods, such as <b>Staff Augmentation</b>, <b>Time & Materials</b> and <b>Fixed Price</b>. Please, find below a short description of each contracting method:
         </p>
 
         <div className="row">
