@@ -33,6 +33,9 @@ const LOCALE = {
       text: "Privacy",
       url: "/privacy",
     },
+    slogan: {
+      text: "Professional software development for startups",
+    },
     rights: {
       text: "All rights reserved",
     },
@@ -48,6 +51,9 @@ const LOCALE = {
     privacy: {
       text: "Privacidad",
       url: "/es/privacidad",
+    },
+    slogan: {
+      text: "Desarrollo de software profesional para startups",
     },
     rights: {
       text: "Todos los derechos reservados",
@@ -103,8 +109,11 @@ export default function Layout({ children, location }: Props): JSX.Element {
             <div className="col l6 s12">
               <h5 className="white-text">CodingPalta LLC</h5>
               <p className="grey-text text-lighten-4">
-                {/* TODO: Short description about the LLC -> We provide professional software development services for startups */}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel accumsan nulla. Maecenas eget purus est. Donec nisi ipsum, bibendum et rutrum at, iaculis in orci. Praesent facilisis mattis ligula, et consequat neque mollis eu. Donec ut luctus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                {LOCALE[lang].slogan.text}
+                <br />
+                Address
+                <br />
+                City and state
               </p>
             </div>
             <div className="col l3 offset-l3 s12">
