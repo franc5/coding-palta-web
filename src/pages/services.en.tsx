@@ -5,17 +5,17 @@ import Item, { Service } from "../components/Item";
 import OneTopicSection from "../components/OneTopicSection";
 
 const SERVICES: Array<Service> = [{
-  icon: "group",
-  title: "Staff Augmentation",
-  description: "We provide you with specific people for specific roles. Say, a developer to join your developer team. This is charged hourly (exactly, or as a fixed monthly rate contract)",
-}, {
   icon: "access_time",
   title: "Time & Materials",
-  description: "It's a form of staff augmentation where we responsable for the development but we work along with you or whoever else is involved in this project, for time. It can be a fixed amount of time, or indefinite. The scoping can be done similarly here, but it works more as if you would hire a development team for your company than simply hiring a company to develop an app. Everything is more simple and dynamic",
+  description: "It's a form of staff augmentation where we responsible for the development but we work along with you or whoever else is involved in this project, for time. It can be a fixed amount of time, or indefinite. Everything is more simple and dynamic",
+}, {
+  icon: "group",
+  title: "Staff Augmentation",
+  description: "We provide you with specialists for specific roles. Say, a developer to join your developer team. This is charged hourly (or as a fixed monthly rate)",
 }, {
   icon: "attach_money",
   title: "Fixed Price",
-  description: "A properly scoped project where we define a set of requirements starting from a deep analysis, we deliver an expected deadline, and we work on it until every party considers the requirements met. If the requirements change, everything is reevaluated. This is charged as a package",
+  description: "A properly scoped project where we define a set of requirements starting from a deep analysis, we deliver an expected deadline and we work on it until every party considers the requirements met. If the requirements change, everything is reevaluated",
 }];
 
 export default function ServicesPage() {
