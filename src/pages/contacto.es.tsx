@@ -55,19 +55,19 @@ export default function ContactPage() {
               <div className="input-field col s12">
                 <input id="full-name" type="text" ref={fullNameRef} />
                 <label htmlFor="full-name">Nombre completo</label>
-                {errors.fullName && <span className="helper-text red-text">Por favor, ingrese su nombre completo</span>}
+                {errors.fullName && <span className="helper-text red-text left-align">Por favor, ingrese su nombre completo</span>}
               </div>
 
               <div className="input-field col s12">
                 <input id="email" type="email" ref={emailRef} />
                 <label htmlFor="email">e-mail</label>
-                {errors.email && <span className="helper-text red-text">Por favor, ingrese un e-mail válido</span>}
+                {errors.email && <span className="helper-text red-text left-align">Por favor, ingrese un e-mail válido</span>}
               </div>
 
               <div className="input-field col s12">
                 <textarea id="message" className="materialize-textarea" ref={messageRef} />
                 <label htmlFor="message">Mensaje</label>
-                {errors.message && <span className="helper-text red-text">Su mensaje es demasiado corto. Por favor, escriba al menos 20 caracteres para que podamos ayudarlo</span>}
+                {errors.message && <span className="helper-text red-text left-align">Su mensaje es demasiado corto. Por favor, escriba al menos 20 caracteres para que podamos ayudarlo</span>}
               </div>
 
               <button className="btn right waves-effect waves-light" type="submit" name="action">
