@@ -26,7 +26,7 @@ export default function ContactPage() {
     const message = messageRef?.current.value;
 
     const isFullNameInvalid = !fullName?.length;
-    const isEmailInvalid = true;
+    const isEmailInvalid = !/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     const isMessageInvalid = !(message?.length > 20);
 
     if (isFullNameInvalid || isEmailInvalid || isMessageInvalid) {
