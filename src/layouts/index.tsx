@@ -111,9 +111,9 @@ export default function Layout({ children, location }: Props): JSX.Element {
               <p className="grey-text text-lighten-4">
                 {LOCALE[lang].slogan.text}
                 <br />
-                Address
+                530-B Harkle Road STE 100
                 <br />
-                City and state
+                Santa Fe, NM 87505
               </p>
             </div>
             <div className="col l3 offset-l3 s12">
