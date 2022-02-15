@@ -81,6 +81,7 @@ export default function Layout({ children, location }: Props): JSX.Element {
     <>
       {/* Import icons */}
       <Helmet>
+        <title>CodingPalta</title>
         {/* TODO: Save the fonts in the project */}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </Helmet>
