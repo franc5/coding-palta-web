@@ -18,6 +18,6 @@ module.exports = {
       prefixDefault: false,
     },
   }],
-  pathPrefix: "/coding-palta-web",
+  //pathPrefix: "/coding-palta-web",
 };
 
