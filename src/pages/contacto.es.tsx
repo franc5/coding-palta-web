@@ -70,9 +70,11 @@ export default function ContactPage() {
                 {errors.message && <span className="helper-text red-text left-align">Su mensaje es demasiado corto. Por favor, escriba al menos 20 caracteres para que podamos ayudarlo</span>}
               </div>
 
-              <button className="btn right waves-effect waves-light" type="submit" name="action">
-                Enviar
-              </button>
+              <div className="col s12">
+                <button className="btn right waves-effect waves-light" type="submit" name="action">
+                  Enviar
+                </button>
+              </div>
 
             </div>
           </form>

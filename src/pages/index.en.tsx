@@ -21,9 +21,9 @@ export default function IndexPage() {
       <div id="index-banner" className="parallax-container">
         <div className="section no-pad-bot">
           <div className="container">
-            <h1 className="header center teal-text text-lighten-2">CodingPalta</h1>
+            <h1 className="header center blue-grey-text">CodingPalta</h1>
             <div className="row center">
-              <h3 className="header col s12 light">Professional software development for startups</h3>
+              <h3 className="header col s12 light blue-grey-text">Professional software development for startups</h3>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function IndexPage() {
       <OneTopicSection title="Partners and customers">
         <>
           <p>
-            We work with <a href="https://woxlab.com" target="_blank">WoxLab LLC</a> with which we share some common clients. And we are constantly seeking for new startups to work with.
+            We work with <a href="https://woxlab.com" target="_blank">WoxLab LLC</a> with whom we share some common clients. And we are constantly seeking for new startups to work with.
           </p>
           <a href="https://woxlab.com" target="_blank">
             <img src="https://woxlab.com/wp-content/uploads/2021/01/Woxlab.Logo-02.png" alt="WoxLab" width="252px" height="72px" />

@@ -38,7 +38,7 @@ const LOCALE = {
       "url": "/es/servicios",
     },
     "about": {
-      "text": "Sobre Nosotros",
+      "text": "Nosotros",
       "url": "/es/nosotros",
     },
     "blog": {

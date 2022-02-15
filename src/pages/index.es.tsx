@@ -21,9 +21,9 @@ export default function IndexPage() {
       <div id="index-banner" className="parallax-container">
         <div className="section no-pad-bot">
           <div className="container">
-            <h1 className="header center teal-text text-lighten-2">CodingPalta</h1>
+            <h1 className="header center blue-grey-text">CodingPalta</h1>
             <div className="row center">
-              <h3 className="header col s12 light">Desarrollo de software profesional para startups</h3>
+              <h3 className="header col s12 light blue-grey-text">Desarrollo de software profesional para startups</h3>
             </div>
           </div>
         </div>

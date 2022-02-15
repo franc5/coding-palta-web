@@ -35,7 +35,7 @@ export default function AboutPage() {
 
       <Divider />
 
-      <OneTopicSection title="How we wok?">
+      <OneTopicSection title="How we work?">
         <SectionWithImage image={About_1} imageInTheLeft>
           <>
             <p className="left-align">
