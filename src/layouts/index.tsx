@@ -88,7 +88,7 @@ export default function Layout({ children, location }: Props): JSX.Element {
 
       <nav className="white" role="navigation">
         <div className="nav-wrapper container">
-          <Link id="logo-container" to={homeUrl} className="brand-logo">CodingPalta</Link>
+          <Link id="logo-container" to={homeUrl} className="brand-logo">Coding</Link>
 
           <ul className="right hide-on-med-and-down">
             <NavbarLinks lang={lang} />

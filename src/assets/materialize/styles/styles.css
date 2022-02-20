@@ -6,9 +6,17 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
+nav ul a {
   color: #444;
+}
+
+.brand-logo {
+  color: #47241B !important;
+}
+
+.brand-logo::after {
+  color: #C5D18A;
+  content: "Palta";
 }
 
 p {
