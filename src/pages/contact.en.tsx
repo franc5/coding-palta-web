@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Link } from "gatsby";
 
+import * as _global from "../global";
+
 import OneTopicSection from "../components/OneTopicSection";
 import SectionWithImage from "../components/SectionWithImage";
 
@@ -38,7 +40,9 @@ export default function ContactPage() {
       return;
     }
 
-    // TODO: Send the message and show an successfull pane -consider a loading spinner while the message is being sent and catching potential errors while sending-
+    fetch(`https://testeandomail.000webhostapp.com/?to=${email}&name=${fullName}&message=${message}`)
+      .then(() => window.M.toast({ html: "Message sent. Thanks for contacting us" }))
+      .catch(() => window.M.toast({ html: "Error sending message. Please, try again later" }))
   }
 
   return (
