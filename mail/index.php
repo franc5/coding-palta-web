@@ -78,6 +78,7 @@ function createMessage($sender, $to, $subject, $messageText) {
  return $message;
 }
 
+header("Access-Control-Allow-Origin: *");
 $to = $_GET["to"];
 $name = $_GET["name"];
 $message = $_GET["message"];
