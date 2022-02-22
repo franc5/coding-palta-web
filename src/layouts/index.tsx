@@ -3,6 +3,9 @@ import { Link } from "gatsby";
 import Helmet from "react-helmet";
 
 import NavbarLinks from "./NavbarLinks";
+import { ReactComponent as LinkedIn_Logo } from "../images/linkedin.svg";
+import { ReactComponent as Instagram_Logo } from "../images/instagram.svg";
+import { ReactComponent as Twitter_Logo } from "../images/twitter.svg";
 
 import { getLangFromPathname, LANGS } from "../utils/lang";
 
@@ -19,6 +22,8 @@ import Payment_Methods from "./img/Payment_Methods.png";
 if (typeof window !== "undefined") {
   window.M = require("../assets/materialize/js/materialize.min.js");
 }
+
+const LOGO_SIZE = 25;
 
 const LOCALE = {
   [LANGS.EN]: {
@@ -115,6 +120,21 @@ export default function Layout({ children, location }: Props): JSX.Element {
                 530-B Harkle Road STE 100
                 <br />
                 Santa Fe, NM 87505
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/company/coding-palta-llc/" target="_blank" title="See us at LinkedIn">
+                  <LinkedIn_Logo width={LOGO_SIZE} height={LOGO_SIZE} />
+                </a>
+                &nbsp;
+                &nbsp;
+                <a href="https://www.instagram.com/codingpalta/" target="_blank" title="See us at Instagram">
+                  <Instagram_Logo width={LOGO_SIZE} height={LOGO_SIZE} />
+                </a>
+                &nbsp;
+                &nbsp;
+                <a href="https://twitter.com/CodingPalta" target="_blank" title="See us at Twitter">
+                  <Twitter_Logo width={LOGO_SIZE} height={LOGO_SIZE} />
+                </a>
               </p>
             </div>
             <div className="col l3 offset-l3 s12">
