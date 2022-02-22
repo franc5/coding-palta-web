@@ -113,7 +113,7 @@ export default function Layout({ children, location }: Props): JSX.Element {
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h5 className="white-text">CodingPalta LLC</h5>
+              <h5 className="white-text">Coding Palta LLC</h5>
               <p className="grey-text text-lighten-4">
                 {LOCALE[lang].slogan.text}
                 <br />
@@ -148,7 +148,7 @@ export default function Layout({ children, location }: Props): JSX.Element {
         </div>
         <div className="footer-copyright">
           <div className="container">
-            &nbsp;&nbsp;&copy; Copyright 2022 - CodingPalta LLC - {LOCALE[lang].rights.text}
+            &nbsp;&nbsp;&copy; Copyright 2022 - Coding Palta LLC - {LOCALE[lang].rights.text}
           </div>
         </div>
       </footer>
