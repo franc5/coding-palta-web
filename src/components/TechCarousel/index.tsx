@@ -54,8 +54,8 @@ export default function TechCarousel() {
 
   return (
     <div className="carousel">
-      {LOGOS.map(LogoImageComponent => (
-        <a className="carousel-item valign-wrapper">
+      {LOGOS.map((LogoImageComponent, i) => (
+        <a className="carousel-item valign-wrapper" key={i}>
           <LogoImageComponent />
         </a>
       ))}
