@@ -3,12 +3,30 @@ import React from "react";
 import * as _global from "../global";
 
 import Divider from "../components/Divider";
+import Item, { Service } from "../components/Item";
 import OneTopicSection from "../components/OneTopicSection";
 import TechCarousel from "../components/TechCarousel";
 
 // TODO: Load images using Gatsby images plugin
 // @ts-ignore
 import Home_0 from "../images/Home_0.jpg";
+
+const SERVICES: Array<Service> = [{
+  icon: "phone_android",
+  title: "Apps móviles",
+  description: "Desarrollamos tanto aplicaciones nativas como híbridas en función de sus necesidades. Le recomendamos la mejor alternativa para su negocio y la implementamos usando las últimas tecnologías y diseños pensados para que sus usuarios tengan la mejor experiencia posible.",
+  to: "/es/appmoviles",
+}, {
+  icon: "web",
+  title: "Apps Web",
+  description: "Implementamos su aplicación web (tanto el frontend como el backend) en función de sus necesidades. Noes enfocamos en la experiencia de usuario para que sus clientes queden totalmente satisfechos al usar su aplicación web.",
+  to: "/es/appsweb",
+}, {
+  icon: "question_answer",
+  title: "Consultoría",
+  description: "Proveemos servicios de consultoria de software en general. Realizamos análisis técnicos de proyectos y lo asesoramos sobre los diferentes aspectos del desarrollo de software.",
+  to: "/es/consultoria",
+}];
 
 export default function IndexPage() {
   React.useEffect(function initParallaxes() {
@@ -47,6 +65,21 @@ export default function IndexPage() {
       </OneTopicSection>
 
       <Divider />
+
+      <OneTopicSection title="Servicios">
+        <>
+          <p>
+            En CodingPalta proveemos servicios profesionales de desarrollo de software para <b>startups</b>. Nos enfocamos en el desarrollo de aplicaciones móviles y web, pero también proveemos servicios de consultoría de software en general.
+          </p>
+
+          <div className="row">
+            {SERVICES.map(service => <Item key={service.icon} {...service} />)}
+          </div>
+        </>
+      </OneTopicSection>
+
+      <Divider />
+
 
       <OneTopicSection title="Tecnologías">
         <>
