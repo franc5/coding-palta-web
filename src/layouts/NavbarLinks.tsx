@@ -16,8 +16,8 @@ const LOCALE = {
         "text": "Mobile apps",
         "url": "/mobileapps",
       }, {
-        "text": "Web apps",
-        "url": "/webapps",
+        "text": "Customized software",
+        "url": "/customized",
       }, {
         "text": "Consulting",
         "url": "/consulting",
@@ -49,8 +49,8 @@ const LOCALE = {
         "text": "Apps móviles",
         "url": "/es/appsmoviles",
       }, {
-        "text": "Apps web",
-        "url": "/es/appsweb",
+        "text": "Software a medida",
+        "url": "/es/customizado",
       }, {
         "text": "Consultoría",
         "url": "/es/consultoria",
