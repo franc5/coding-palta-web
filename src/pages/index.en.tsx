@@ -18,9 +18,9 @@ const SERVICES: Array<Service> = [{
   to: "/mobileapps",
 }, {
   icon: "web",
-  title: "Web Apps",
-  description: "We implement your web app (both frontend and backend) according to your needs. We focus on the user experience so that your customers are fully satisfied when using your web app.",
-  to: "/webapps",
+  title: "Customized Software",
+  description: "We implement customized software according to your needs. We use agile methodologies to meet your requirements while we keep the focus on the quality and usability of the product.",
+  to: "/customized",
 }, {
   icon: "question_answer",
   title: "Consulting",

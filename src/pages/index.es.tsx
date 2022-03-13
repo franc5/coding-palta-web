@@ -18,9 +18,9 @@ const SERVICES: Array<Service> = [{
   to: "/es/appmoviles",
 }, {
   icon: "web",
-  title: "Apps Web",
-  description: "Implementamos su aplicación web (tanto el frontend como el backend) en función de sus necesidades. Noes enfocamos en la experiencia de usuario para que sus clientes queden totalmente satisfechos al usar su aplicación web.",
-  to: "/es/appsweb",
+  title: "Software a medida",
+  description: "Implementamos software a medida acorde a sus necesidades. Usamos metodologías ágiles para cumplir con los requerimientos mientras nos enfocamos en la calidad y la usabilidad del producto.",
+  to: "/es/customizado",
 }, {
   icon: "question_answer",
   title: "Consultoría",
