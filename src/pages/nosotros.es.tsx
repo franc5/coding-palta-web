@@ -4,7 +4,7 @@ import OneTopicSection from "../components/OneTopicSection";
 import Divider from "../components/Divider";
 import SectionWithImage from "../components/SectionWithImage";
 
-import About_0 from "../images/About_0.jpg";
+import Me from "../images/Me.jpg";
 import About_1 from "../images/About_1.jpg";
 import { ReactComponent as LinkedIn_Logo } from "../images/linkedin.svg";
 
@@ -20,16 +20,21 @@ export default function AboutPage() {
   return (
     <>
       <OneTopicSection title="Sobre CodingPalta">
-        <SectionWithImage image={About_0}>
-          <p className="left-align">
-            <b>CodingPalta</b> es una empresa de tecnología especializada en desarrollo de software.
-            <br />
-            Fue fundada 2022 por <b>Ing. Luis Francisco Costa</b> ( <LinkedInLink /> ) con la intensión de ser una empresa que provea soluciones en desarrollo de software para startups.
-            <br />
-            Para alcanzar este objetivo, usamos las últimas tecnologías y seguimos las mejores prácticas de la industria para desarrollar software de la más alta calidad.
-            <br />
-            Tenemos basta experiencia trabajando con startups y sabemos como ayudarlas a crecer.
-          </p>
+        <SectionWithImage image={Me} epigraph="Ing. Luis Francisco Costa - Entrega de diplomas - Universidad Nacional del Sur">
+          <>
+            <p className="left-align">
+              <b>CodingPalta</b> es una empresa de tecnología especializada en desarrollo de software.
+            </p>
+            <p className="left-align">
+              Fue fundada en 2022 por <b>Ing. Luis Francisco Costa</b> ( <LinkedInLink /> ), un Ingeniero de Software graduado de la <a href="https://uns.edu.ar">Universidad Nacional del Sur</a> (Argentina) quien, luego de numerosos años trabajando con startups y habiendo entendido sus problemas y sus necesidades, decidió fundar <b>CodingPalta</b> para ayudar a las startups a potencias su crecimiento.
+            </p>
+            <p className="left-align">
+              Para alcanzar este objetivo, usamos las últimas tecnologías y seguimos las mejores prácticas de la industria para desarrollar software de la más alta calidad.
+            </p>
+            <p className="left-align">
+              Tenemos basta experiencia trabajando con startups y sabemos como ayudarlas a crecer.
+            </p>
+          </>
         </SectionWithImage>
       </OneTopicSection>
 

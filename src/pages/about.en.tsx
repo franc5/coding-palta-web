@@ -4,7 +4,7 @@ import OneTopicSection from "../components/OneTopicSection";
 import Divider from "../components/Divider";
 import SectionWithImage from "../components/SectionWithImage";
 
-import About_0 from "../images/About_0.jpg";
+import Me from "../images/Me.jpg";
 import About_1 from "../images/About_1.jpg";
 import { ReactComponent as LinkedIn_Logo } from "../images/linkedin.svg";
 
@@ -20,16 +20,21 @@ export default function AboutPage() {
   return (
     <>
       <OneTopicSection title="About CodingPalta">
-        <SectionWithImage image={About_0}>
-          <p className="left-align">
-            <b>CodingPalta</b> is a is a technology company specialized in software development.
-            <br />
-            It was founded in 2022 by <b>Eng. Luis Francisco Costa</b> ( <LinkedInLink /> ) aiming to be a company which provides software development solutions for startups.
-            <br />
-            To reach these goals, we use the newest technologies and follow the best practice in order to develop high quality software.
-            <br />
-            We have extensive experience working with startups and we know how to help them grow.
-          </p>
+        <SectionWithImage image={Me} epigraph="Eng. Luis Francisco Costa - Awarding of diplomas - National University of the South">
+          <>
+            <p className="left-align">
+              <b>CodingPalta</b> is a is a technology company specialized in software development.
+            </p>
+            <p className="left-align">
+              It was founded in 2022 by <b>Eng. Luis Francisco Costa</b> ( <LinkedInLink /> ), a Software Engineer with a degree from the <a href="https://uns.edu.ar">National University of the South</a> (Argentina) whom, after several years of working with startups and having understood their problems and their needs, decided to found <b>CodignPalta</b> to help startups to enhance their growth.
+            </p>
+            <p className="left-align">
+              To reach these goals, in <b>CodingPalta</b> we use the newest technologies and follow the best practices in order to develop high quality software.
+            </p>
+            <p className="left-align">
+              We have extensive experience working with startups and we know how to help them grow.
+            </p>
+          </>
         </SectionWithImage>
       </OneTopicSection>
 
