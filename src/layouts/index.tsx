@@ -120,6 +120,8 @@ export default function Layout({ children, location }: Props): JSX.Element {
                 530-B Harkle Road STE 100
                 <br />
                 Santa Fe, NM 87505
+                <br />
+                fcosta@codingpalta.com
               </p>
               <p>
                 <a href="https://www.linkedin.com/company/coding-palta-llc/" target="_blank" title="See us at LinkedIn">
