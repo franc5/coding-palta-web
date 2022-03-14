@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       <OneTopicSection title="About CodingPalta">
-        <SectionWithImage image={Me} epigraph="Eng. Luis Francisco Costa - Awarding of diplomas - National University of the South">
+        <SectionWithImage image={Me} epigraph="Eng. Luis Francisco Costa">
           <>
             <p className="left-align">
               <b>CodingPalta</b> is a is a technology company specialized in software development.

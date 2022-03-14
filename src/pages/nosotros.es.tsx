@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       <OneTopicSection title="Sobre CodingPalta">
-        <SectionWithImage image={Me} epigraph="Ing. Luis Francisco Costa - Entrega de diplomas - Universidad Nacional del Sur">
+        <SectionWithImage image={Me} epigraph="Ing. Luis Francisco Costa">
           <>
             <p className="left-align">
               <b>CodingPalta</b> es una empresa de tecnología especializada en desarrollo de software.
