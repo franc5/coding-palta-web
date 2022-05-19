@@ -89,19 +89,6 @@ export default function IndexPage() {
         </>
       </OneTopicSection>
 
-      <Divider />
-
-      <OneTopicSection title="Partners and customers">
-        <>
-          <p>
-            We work with <a href="https://woxlab.com" target="_blank">WoxLab LLC</a> with whom we share some common clients. And we are constantly seeking for new startups to work with.
-          </p>
-          <a href="https://woxlab.com" target="_blank">
-            <img src="https://woxlab.com/wp-content/uploads/2021/01/Woxlab.Logo-02.png" alt="WoxLab" width="252px" height="72px" />
-          </a>
-        </>
-      </OneTopicSection>
-
     </>
   );
 }
