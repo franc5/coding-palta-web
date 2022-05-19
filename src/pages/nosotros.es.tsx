@@ -6,15 +6,6 @@ import SectionWithImage from "../components/SectionWithImage";
 
 import About_0 from "../images/About_0.jpg";
 import About_1 from "../images/About_1.jpg";
-import { ReactComponent as LinkedIn_Logo } from "../images/linkedin.svg";
-
-const LINKED_IN_LOGO_SIZE = 15;
-
-const LinkedInLink = () => (
-  <a href="https://www.linkedin.com/in/luisfranciscocosta/" target="_blank" title="See his profile at LinkedIn">
-    <LinkedIn_Logo width={LINKED_IN_LOGO_SIZE} height={LINKED_IN_LOGO_SIZE} />
-  </a>
-);
 
 export default function AboutPage() {
   return (
@@ -24,7 +15,7 @@ export default function AboutPage() {
           <p className="left-align">
             <b>CodingPalta</b> es una empresa de tecnología especializada en desarrollo de software.
             <br />
-            Fue fundada 2022 por <b>Ing. Luis Francisco Costa</b> ( <LinkedInLink /> ) con la intensión de ser una empresa que provea soluciones en desarrollo de software para startups.
+            Fue fundada 2022 por con la intensión de ser una empresa que provea soluciones en desarrollo de software para startups.
             <br />
             Para alcanzar este objetivo, usamos las últimas tecnologías y seguimos las mejores prácticas de la industria para desarrollar software de la más alta calidad.
             <br />
